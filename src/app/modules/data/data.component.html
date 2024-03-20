@@ -1,0 +1,9 @@
+<p>data works!</p>
+<button  routerLink="buster" routerLinkActive="active">Buster with resolver</button>
+<button  routerLink="buster/12" routerLinkActive="active">Buster with id</button>
+<button  routerLink="buster/query-params" [queryParams]="{grade: 'gold'}"  routerLinkActive="active">Buster with id</button>
+<button  routerLink="buster/with-data" routerLinkActive="active">Buster with data</button>
+<router-outlet></router-outlet>
+<div *ngIf="isLoading | async">
+
+</div>
